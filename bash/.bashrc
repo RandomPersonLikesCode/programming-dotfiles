@@ -22,8 +22,6 @@ alias gc="g commit"
 alias gp="g push"
 alias gs="g status"
 
-alias cg="cargo"
-
 e() {
   $EDITOR "$@"
 }
