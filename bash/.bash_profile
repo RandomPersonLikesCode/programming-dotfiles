@@ -1,4 +1,4 @@
-export EDITOR="vim"
+export EDITOR="hx"
 export C_USER="RandomPerson"
 
 export JAVA_HOME="$PREFIX/lib/jvm/java-21-openjdk"

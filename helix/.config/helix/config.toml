@@ -1,0 +1,35 @@
+theme = "onedark"
+
+[editor]
+mouse = false
+line-number = "relative"
+cursorline = true
+continue-comments = false
+true-color = true
+bufferline = "always"
+color-modes = true
+
+[editor.cursor-shape]
+normal = "underline"
+insert = "bar"
+select = "underline"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+
+[editor.indent-guides]
+render = true
+character = "▏"
+skip-levels = 1
+
+[editor.statusline]
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "S"
+
+[editor.inline-diagnostics]
+cursor-line = "info"
+other-lines = "warning"
+prefix-len = 5
+max-diagnostics = 5

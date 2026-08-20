@@ -22,8 +22,7 @@ alias gc="g commit"
 alias gp="g push"
 alias gs="g status"
 
-alias cg="cargo"
-
 e() {
   $EDITOR "$@"
+  echo -ne "\e[3 q"
 }
