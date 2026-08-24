@@ -1,0 +1,5 @@
+use-grammars = {only = ["cpp"]}
+
+[[language]]
+name = "cpp"
+indent = {tab-width = 4, unit = "    "}
