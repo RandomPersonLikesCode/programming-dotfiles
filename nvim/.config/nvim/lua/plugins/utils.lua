@@ -9,7 +9,11 @@ return {
 
             tree.install({
                 "c",
-                "cpp"
+                "cpp",
+                "glsl",
+                "xml",
+                "bash",
+                "lua",
             })
         end
     },
@@ -37,5 +41,31 @@ return {
 
             fuzzy = { implementation = "prefer_rust_with_warning" }
         }
+    },
+    {
+        "stevearc/conform.nvim",
+        event = "BufWritePre",
+        opts = {
+            formatters_by_ft = {
+                cpp = {"clang_format"},
+                c = {"clang_format"}
+            },
+            format_on_save = {
+                timeout_ms = 1000,
+                lsp_format = "fallback"
+            }
+        }
+      },
+      {
+        "nvim-telescope/telescope.nvim",
+        version = "*",
+        dependencies = {
+          "nvim-lua/plenary.nvim",
+
+          {
+            "nvim-telescope/telescope-fzf-native.nvim",
+            build = "make"
+          }
+        }
+      }
     }
-}

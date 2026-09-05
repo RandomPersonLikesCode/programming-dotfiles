@@ -3,8 +3,9 @@ export C_USER="RandomPerson"
 
 export JAVA_HOME="$PREFIX/lib/jvm/java-21-openjdk"
 export ANDROID_HOME="$HOME/.local/share/android"
-export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/29"
-export ANDROID_NDK_BIN="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin"
+export ANDROID_NDK_ROOT="$ANDROID_HOME/ndk/29"
+export ANDROID_NDK_BIN="$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin"
+export ANDROID_NDK_SYSROOT="$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
 
 export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
 export PATH="$PATH:$HOME/.local/bin"
