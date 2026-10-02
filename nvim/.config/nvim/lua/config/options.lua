@@ -19,7 +19,7 @@ vim.opt.expandtab = true
 
 vim.opt.list = true
 vim.opt.listchars = {
-    space = "·"
+  space = "·",
 }
 
 vim.opt.guicursor = "i-ci-ve:ver25,n-v-c-r-cr-o-sm:hor20"
@@ -27,6 +27,8 @@ vim.opt.guicursor = "i-ci-ve:ver25,n-v-c-r-cr-o-sm:hor20"
 vim.opt.cursorline = true
 
 vim.opt.exrc = true
+
+vim.opt.foldlevel = 99
 
 vim.g.c_syntax_for_h = 1
 
