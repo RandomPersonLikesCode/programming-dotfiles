@@ -13,8 +13,7 @@ return {
         "lua",
         "glsl",
         "xml",
-        "java",
-        "groovy",
+        "rust",
       })
     end,
   },
@@ -51,7 +50,9 @@ return {
         c = { "clang_format" },
         cpp = { "clang_format" },
         lua = { "stylua" },
+        rust = { "rustfmt" },
       },
+
       format_on_save = {
         timeout_ms = 1000,
         lsp_format = "fallback",

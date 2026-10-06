@@ -11,8 +11,8 @@ vim.diagnostic.config({
 vim.lsp.config("*", {
   capabilities = caps,
   root_markers = {
-    ".git"
-  }
+    ".git",
+  },
 })
 
 vim.lsp.config("clangd", {
@@ -26,10 +26,26 @@ vim.lsp.config("clangd", {
 vim.lsp.config("lua_ls", {
   cmd = { "lua-language-server" },
   filetypes = {
-    "lua"
+    "lua",
   },
 })
 
+vim.lsp.config("rust_analyzer", {
+  cmd = { "rust-analyzer" },
+  filetypes = {
+    "rust",
+  },
+  root_markers = {
+    "Cargo.toml",
+  },
+  settings = {
+    ["rust-analyzer"] = {
+      cargo = {
+        allFeatures = true,
+      },
+    },
+  },
+})
 
 vim.lsp.enable("clangd")
 vim.lsp.enable("lua_ls")
