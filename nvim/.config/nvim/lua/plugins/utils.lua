@@ -13,7 +13,8 @@ return {
         "lua",
         "glsl",
         "xml",
-        "rust",
+        "cmake",
+        "bash",
       })
     end,
   },
@@ -50,7 +51,6 @@ return {
         c = { "clang_format" },
         cpp = { "clang_format" },
         lua = { "stylua" },
-        rust = { "rustfmt" },
       },
 
       format_on_save = {
