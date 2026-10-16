@@ -20,6 +20,7 @@ vim.opt.expandtab = true
 vim.opt.list = true
 vim.opt.listchars = {
   space = "·",
+  tab = "--"
 }
 
 vim.opt.guicursor = "i-ci-ve:ver25,n-v-c-r-cr-o-sm:hor20"

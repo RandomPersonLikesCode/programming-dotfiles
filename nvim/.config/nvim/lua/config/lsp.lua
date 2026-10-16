@@ -16,36 +16,10 @@ vim.lsp.config("*", {
 })
 
 vim.lsp.config("clangd", {
-  cmd = { "clangd" },
   filetypes = {
     "c",
     "cpp",
   },
 })
 
-vim.lsp.config("lua_ls", {
-  cmd = { "lua-language-server" },
-  filetypes = {
-    "lua",
-  },
-})
-
-vim.lsp.config("rust_analyzer", {
-  cmd = { "rust-analyzer" },
-  filetypes = {
-    "rust",
-  },
-  root_markers = {
-    "Cargo.toml",
-  },
-  settings = {
-    ["rust-analyzer"] = {
-      cargo = {
-        allFeatures = true,
-      },
-    },
-  },
-})
-
 vim.lsp.enable("clangd")
-vim.lsp.enable("lua_ls")
