@@ -16,9 +16,14 @@ vim.lsp.config("*", {
 })
 
 vim.lsp.config("clangd", {
+  cmd = {"clangd"},
   filetypes = {
     "c",
-    "cpp",
+    "cpp"
+  },
+
+  root_markers = {
+    "CMakeLists.txt"
   },
 })
 

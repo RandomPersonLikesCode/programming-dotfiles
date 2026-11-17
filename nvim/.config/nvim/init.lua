@@ -1,7 +1,7 @@
 require("config.lazy")
 require("config.options")
-require("config.keymap")
 require("config.lsp")
+require("config.keymap")
 
 vim.api.nvim_create_autocmd("FileType", {
   callback = function()
@@ -12,7 +12,6 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("FileType", {
   pattern = {
     "xml",
-    "groovy",
   },
 
   callback = function()

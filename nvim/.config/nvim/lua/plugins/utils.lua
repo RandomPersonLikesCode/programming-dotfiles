@@ -13,7 +13,6 @@ return {
         "lua",
         "glsl",
         "xml",
-        "cmake",
         "bash",
         "just",
       })
@@ -55,7 +54,6 @@ return {
 
       format_on_save = {
         timeout_ms = 1000,
-        lsp_format = "fallback",
       },
     },
   },

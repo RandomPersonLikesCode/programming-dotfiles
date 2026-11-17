@@ -31,7 +31,5 @@ vim.opt.exrc = true
 
 vim.opt.foldlevel = 99
 
-vim.g.c_syntax_for_h = 1
-
 vim.g.netrw_banner = 0
 vim.g.netrw_liststyle = 3
