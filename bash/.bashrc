@@ -21,11 +21,6 @@ alias gc="g commit"
 alias gp="g push"
 alias gs="g status"
 
-alias cg="cargo"
-alias cgb="cg build"
-alias cgr="cg run"
-alias cgc="cg clippy"
-
 e() {
   $EDITOR "$@"
   echo -ne "\e[3 q"

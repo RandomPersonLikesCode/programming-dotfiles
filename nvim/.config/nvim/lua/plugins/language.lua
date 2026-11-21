@@ -16,8 +16,7 @@ return {
         "glsl",
         "xml",
         "bash",
-        "just",
-        "rust"
+        "just"
       })
     end
   },
@@ -27,8 +26,7 @@ return {
     opts = {
       formatters_by_ft = {
         c = {"clang_format"},
-        cpp = {"clang_format"},
-        rust = {"rustfmt"}
+        cpp = {"clang_format"}
       },
 
       format_on_save = {
