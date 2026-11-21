@@ -22,6 +22,9 @@ alias gp="g push"
 alias gs="g status"
 
 alias cg="cargo"
+alias cgb="cg build"
+alias cgr="cg run"
+alias cgc="cg clippy"
 
 e() {
   $EDITOR "$@"

@@ -1,30 +1,11 @@
-local caps = require("blink.cmp").get_lsp_capabilities()
+-- LSP/Diagnostic config
 
 vim.diagnostic.config({
   virtual_text = true,
   signs = true,
   underline = true,
   update_in_insert = false,
-  severity_sort = true,
+  severity_sort = true
 })
 
-vim.lsp.config("*", {
-  capabilities = caps,
-  root_markers = {
-    ".git",
-  },
-})
-
-vim.lsp.config("clangd", {
-  cmd = {"clangd"},
-  filetypes = {
-    "c",
-    "cpp"
-  },
-
-  root_markers = {
-    "CMakeLists.txt"
-  },
-})
-
-vim.lsp.enable("clangd")
+vim.lsp.enable({"clangd", "rust_analyzer"})

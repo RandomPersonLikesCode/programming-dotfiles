@@ -1,3 +1,5 @@
+-- Appearance-related plugins
+
 return {
   {
     "folke/tokyonight.nvim",
@@ -7,8 +9,8 @@ return {
       style = "night",
       styles = {
         comments = { italic = false },
-        keywords = { italic = false },
-      },
+        keywords = { italic = false }
+      }
     }
   }
 }

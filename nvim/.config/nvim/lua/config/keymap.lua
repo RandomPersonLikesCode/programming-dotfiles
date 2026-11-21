@@ -1,3 +1,5 @@
+-- Keymap config
+
 local builtin = require('telescope.builtin')
 local todo = require("todo-comments")
 
