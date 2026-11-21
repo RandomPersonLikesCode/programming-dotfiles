@@ -8,4 +8,4 @@ vim.diagnostic.config({
   severity_sort = true
 })
 
-vim.lsp.enable({"clangd"})
+vim.lsp.enable({"clangd", "rust_analyzer"})
